@@ -17,6 +17,8 @@ Le fichier `alloseance.sql` dans le dossier `data` contient toutes les données 
 Implémenter, dans les règles de l'art, les 3 actions de controller se trouvant dans `app/controller.php`  
 Le tout ne devrait pas excéder 2h (aller, 3 si vous faîtes ça bien comme il faut)
 
+/!\ Utilisez le service `$app['now']` pour vous situez le matin du 3 mai ou à la date de votre choix.
+
 ## Barême
 
 Il sera tenu compte de :  

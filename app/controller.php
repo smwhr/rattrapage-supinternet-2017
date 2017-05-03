@@ -7,6 +7,8 @@ use Symfony\Component\HttpFoundation\Request;
 $app->get('/', function(Request $request, Application $app){
 
   $zip_code = $request->get("zip");
+
+  $now = $app['now']();
   
   /**
    * TODO : 
@@ -18,7 +20,7 @@ $app->get('/', function(Request $request, Application $app){
 
   $seances = []; 
   return new Response($app['twig']->render('home.html.twig', 
-                                                compact('seances', 'zip_code')));
+                                                compact('now', 'seances', 'zip_code')));
 });
 
 
