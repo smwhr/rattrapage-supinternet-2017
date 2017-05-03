@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Alloseance</h1>
+    <p>Trouvez une séance de cinéma près de chez vous</p>
+    <form action="/">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="75020..." name="zip_code">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
+        </span>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h5>Résultats pour <strong>75020</strong>  </h5>
+  </div>
+  
+  <div class="col-md-6 col-md-offset-3">
+    <ul class="media-list well">
+      {% for i in 1..5 %}
+        <li class="media"> 
+          <div class="media-left"> 
+            <a href="/cinema/123">
+              <img alt="64x64" class="media-object" src="//placekitten.com/g/64/64" style="width: 64px; height: 64px;"> 
+            </a>
+          </div>
+          <div class="media-body"> 
+            <h4 class="media-heading"><a href="/cinema/123">MK2 Gambetta</a> <small>75020</small></h4> 
+            10, avenue de la Division Leclerc 75020 Paris<br>
+            4 séances
+          </div> 
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+
+    
+{% endblock content %}

@@ -1,0 +1,15 @@
+{
+  "name": "troisyaourts/rattrapage-2017",
+  "require": {
+    "php"                   : ">5.6",
+    "silex/silex"           : "2.0",
+    "symfony/twig-bridge"   : "*",
+    "doctrine/dbal"         : "*"
+  },
+  "autoload": {
+      "psr-0": { 
+        "Model": "app/Resources/", 
+        "Alloseance": "app/Resources/"
+      }
+  }
+}
